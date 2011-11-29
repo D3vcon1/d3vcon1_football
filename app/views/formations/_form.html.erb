@@ -1,0 +1,33 @@
+<%= form_for(@formation) do |f| %>
+  <% if @formation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@formation.errors.count, "error") %> prohibited this formation from being saved:</h2>
+
+      <ul>
+      <% @formation.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :def %><br />
+    <%= f.number_field :def %>
+  </div>
+  <div class="field">
+    <%= f.label :mid %><br />
+    <%= f.number_field :mid %>
+  </div>
+  <div class="field">
+    <%= f.label :fwd %><br />
+    <%= f.number_field :fwd %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

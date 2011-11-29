@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  goalkeeping: 1
+  passing: 1
+  defense: 1
+  goalscoring: 1
+
+two:
+  name: MyString
+  goalkeeping: 1
+  passing: 1
+  defense: 1
+  goalscoring: 1

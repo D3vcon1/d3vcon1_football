@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @lineup.name %>
+</p>
+
+<p>
+  <b>Formation:</b>
+  <%= @lineup.formation %>
+</p>
+
+
+<%= link_to 'Edit', edit_lineup_path(@lineup) %> |
+<%= link_to 'Back', lineups_path %>

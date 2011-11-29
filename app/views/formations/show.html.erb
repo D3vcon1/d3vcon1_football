@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @formation.name %>
+</p>
+
+<p>
+  <b>Def:</b>
+  <%= @formation.def %>
+</p>
+
+<p>
+  <b>Mid:</b>
+  <%= @formation.mid %>
+</p>
+
+<p>
+  <b>Fwd:</b>
+  <%= @formation.fwd %>
+</p>
+
+
+<%= link_to 'Edit', edit_formation_path(@formation) %> |
+<%= link_to 'Back', formations_path %>
